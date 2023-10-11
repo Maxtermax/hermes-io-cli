@@ -1,0 +1,19 @@
+{
+  "name": "hermes-io-cli",
+  "version": "0.0.1",
+  "description": "",
+  "preferGlobal": true,
+  "type": "commonjs",
+  "main": "lib/main.js",
+  "bin": {
+    "hermes-io-cli": "./lib/main.js"
+  },
+  "keywords": [
+    "hermes-io-cli"
+  ],
+  "author": "maxtermax",
+  "license": "MIT",
+  "dependencies": {
+    "yargs": "^17.7.2"
+  }
+}
