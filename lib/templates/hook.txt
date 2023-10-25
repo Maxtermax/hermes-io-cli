@@ -1,7 +1,8 @@
-useObserver({
-  observer: #1,
-  listener: #2,
-  contexts: [#3],
-});
-
-  
+export const #0 = () => {
+  const handle#0Notification = (payload) => { /* handle notification */ };
+  useObserver({
+    contexts: [#1],
+    observer: #2,
+    listener: handle#0Notification,
+  });
+}
