@@ -1,6 +1,12 @@
 ## Overview
 This CLI is the official scaffolding generator for [hermes-io](https://www.npmjs.com/package/hermes-io#get-started), its generates a simple folder structure that guaranty separation of concerns encompassing pivotal elements such as: [contexts](https://github.com/Maxtermax/hermes-io#context), [hooks](https://github.com/Maxtermax/hermes-io#useobserver-hook) and [observers](https://github.com/Maxtermax/hermes-io#observer).
 
+# Summary
+- [Installation](#installation)
+- [Context](#context)
+- [Observer](#observer)
+- [useObserver](#observer)
+
 ## Installation
 ```
 npm install hermes-io-cli -g
