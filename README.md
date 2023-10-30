@@ -78,20 +78,40 @@ export const UseCustom = () => {
 ```
 Note: Is posible to link existing observers or contexts to a newly generated **useObserver** if the name of any match with the name of the custom hook, for example:
 ```
-
+hermes-io-cli --hook="useCustom" --context="Custom" --observer="Custom"
 ```
+result:
+```
+/hooks/useCustom.js
+/observers/Custom.js
+/contexts/Custom.js
+```
+```javascript
+import { useObserver } from 'hermes-io';
+import { Custom as ObserverCustom } from "../observers/Custom";
+import { Custom as ContextCustom } from "../contexts/Custom";
 
-
+export const UseCustom = () => {
+  const handleUseCustomNotification = (event) => {
+    /* handle notification */
+    console.log(event);
+  };
+  useObserver({
+    contexts: [ContextCustom],
+    observer: ObserverCustom,
+    listener: handleUseCustomNotification,
+  });
+}
+```
 
 ###  Root folder
-By default the folders are generated using the current path as base, typically at the root of the project, this can be changes by using the root argument:
+By default the folders are generated using the current path as a base (typically at the root of the project), this can be changed by using the root argument:
 ```
-hermes-io-cli --root="output" --context="MyContext" --observer="MyObserver"
+hermes-io-cli --root="./output" --context="MyContext" --observer="MyObserver"
 ```
 result:
 ```
 /output/contexts/MyContext.js
-```
-```
 /output/observers/MyObserver.js
 ```
+
