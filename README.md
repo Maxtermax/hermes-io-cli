@@ -5,7 +5,7 @@ This CLI is the official scaffolding generator for [hermes-io](https://www.npmjs
 - [Installation](#installation)
 - [Context](#context)
 - [Observer](#observer)
-- [useObserver](#observer)
+- [useObserver](#use-observer)
 
 ## Installation
 ```
