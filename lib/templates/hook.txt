@@ -1,5 +1,8 @@
 export const #0 = () => {
-  const handle#0Notification = (payload) => { /* handle notification */ };
+  const handle#0Notification = (event) => {
+    /* handle notification */
+    console.log(event);
+  };
   useObserver({
     contexts: [#1],
     observer: #2,
