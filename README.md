@@ -83,9 +83,12 @@ hermes-io-cli --hook="useCustom" --context="Custom" --observer="Custom"
 result:
 ```
 /hooks/useCustom.js
+```
 /observers/Custom.js
+```
 /contexts/Custom.js
 ```
+
 ```javascript
 import { useObserver } from 'hermes-io';
 import { Custom as ObserverCustom } from "../observers/Custom";
@@ -112,6 +115,7 @@ hermes-io-cli --root="./output" --context="MyContext" --observer="MyObserver"
 result:
 ```
 /output/contexts/MyContext.js
+```
+```
 /output/observers/MyObserver.js
 ```
-
